@@ -1,0 +1,96 @@
+//CONTACT
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
+    & h2 {
+        margin-bottom: 0;
+    }
+    & p i {
+        color: #34a853;
+        margin-left: 0.3rem;
+    }
+    &__container {
+        display: flex;
+        margin-top: 3rem;
+        & div {
+            margin: 0 2rem 0 2rem;
+            & h3 {
+                font-weight: lighter;
+            }
+            & span {
+                & i {
+                    color: $colour-primary;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        & form {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0 1rem 0;
+            & label {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+            & input {
+                margin-bottom: 2rem;
+                margin-top: 0.3rem;
+                height: 2rem;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $colour-primary;
+                width: 20rem;
+                outline-color: $colour-primary;
+            }
+            & textarea {
+                margin-top: 0.5rem;
+                margin-bottom: 1.3rem;
+                height: 5rem;
+                border: 1px solid $colour-primary;
+                font-family: 'Montserrat', sans-serif;
+                outline-color: $colour-primary;
+            }
+        }
+        & button {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
+.accueil {
+    background-color: $background-color;
+    &__input {
+        background-color: $background-color;
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+    .contact {
+        &__container {
+            flex-direction: column;
+            margin-top: 2rem;
+            & div:nth-child(1) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact {
+        padding-top: 2rem;
+        &__container {
+            width: 80%;
+            & div {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            & form input {
+                width: 100%;
+            }
+        }
+    }
+}

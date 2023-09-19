@@ -1,0 +1,11 @@
+{
+  "name": "vignon-couverture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/style.scss style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

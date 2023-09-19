@@ -1,0 +1,13 @@
+//COLORS
+$colour-primary: #adae9a; 
+$colour-secondary: #1d1d1b;
+$colour-tertiary: #747474;
+$link-color: #BA5625;
+$background-color : lighten($colour-primary, 30%);
+// $colour-button: linear-gradient(to right, #7F8C7F, #414D41);
+
+//BORDER RADIUS FOR SECTIONS
+@mixin section-radius {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}    

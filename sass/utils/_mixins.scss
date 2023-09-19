@@ -1,0 +1,15 @@
+@mixin underline-text {
+        display:block;
+        clear:both;
+        content : "";
+        position: relative;
+        right: 4rem;
+        max-width: 250px;
+        height  : 1px;
+        width   : 5rem; 
+        border-bottom: 8px solid $colour-primary;
+        transform: skew(-30deg);
+        top: -1rem;
+        margin: 0 auto;
+        z-index: -1;
+}
